@@ -13,7 +13,7 @@ vector<int> c;
 vector<int> d;
 int a_index,b_index;
 
-for(int j=0;j<a.size();j++){
+for(int j=0;j<len;j++){
 int a_max = -pow(10,5);
 int b_max = -pow(10,5);
     for(int i=0;i<a.size();i++){

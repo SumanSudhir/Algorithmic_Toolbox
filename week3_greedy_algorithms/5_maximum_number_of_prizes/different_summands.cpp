@@ -5,6 +5,22 @@ using std::vector;
 
 vector<int> optimal_summands(int n) {
   vector<int> summands;
+  int a=n-1;
+  int b = 1;
+
+  if(n== 1 || n==2){
+    summands.push_back(n);
+  }
+
+  else{
+    while(a>b){
+      summands.push_back(b);
+      b++;
+      a = a-b;
+    }
+    summands.push_back(b+a);
+  }
+
   //write your code here
   return summands;
 }
